@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- share items -->
+    <string-array name="head_titles">
+        <item>我的账单</item>
+        <item>我的</item>
+        <item>更多</item>
+    </string-array>
+    <!-- 请假类型 -->
+    <string-array name="leave_type">
+        <item>事假</item>
+        <item>病假</item>
+        <item>丧假</item>
+    </string-array>
+
+</resources>

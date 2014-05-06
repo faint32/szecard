@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffefebe7"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_relative"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffefebe7"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/imghead_linearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="160.0dip"
+                android:background="@drawable/mine_header_bg" >
+
+                <ImageView
+                    android:id="@+id/imgfaceorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="105.0dip"
+                    android:paddingTop="10.0dip"
+                    android:src="@drawable/dynamic_user_face_border" />
+
+                <ImageView
+                    android:id="@+id/imguserface"
+                    android:layout_width="92dip"
+                    android:layout_height="90dip"
+                    android:layout_marginLeft="112dip"
+                    android:layout_marginTop="18.0dip"
+                    android:src="@drawable/default_face_1" />
+
+                <ImageView
+                    android:id="@+id/imgusername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="110.0dip"
+                    android:paddingTop="120.0dip"
+                    android:src="@drawable/mine_username_bg" />
+
+                <ImageView
+                    android:id="@+id/imgusername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="120.0dip"
+                    android:paddingTop="125.0dip"
+                    android:src="@drawable/widget_gender_woman" />
+
+                <TextView
+                    android:id="@+id/txt_mine_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="147.0dip"
+                    android:paddingTop="125.0dip"
+                    android:text="王小二"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_17" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="60.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="10.0dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10.0dip" >
+
+                    <TableLayout
+                        android:id="@+id/MorePageTableLayout_Favorite"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:shrinkColumns="0"
+                        android:stretchColumns="0" >
+
+                        <TableRow
+                            android:id="@+id/mine_myinfo_row"
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="2.0dip"
+                            android:layout_marginRight="2.0dip"
+                            android:background="@drawable/more_item_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:paddingBottom="16.0dip"
+                            android:paddingTop="8.0dip" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:drawableLeft="@drawable/my_order"
+                                android:drawablePadding="10.0dip"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="17.0dip"
+                                android:text="我的资料"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical"
+                                android:paddingRight="20.0dip"
+                                android:src="@drawable/ic_arrow" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10.0dip" >
+
+                    <TableLayout
+                        android:id="@+id/MorePageTableLayout_Follow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="1.0dip"
+                        android:shrinkColumns="0"
+                        android:stretchColumns="0" >
+
+                        <TableRow
+                            android:id="@+id/mine_myhomework_row"
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="2.0dip"
+                            android:layout_marginRight="2.0dip"
+                            android:background="@drawable/more_item_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:paddingBottom="16.0dip"
+                            android:paddingTop="16.0dip" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:drawableLeft="@drawable/my_score"
+                                android:drawablePadding="10.0dip"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="17.0dip"
+                                android:text="我的作业"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical"
+                                android:paddingRight="20.0dip"
+                                android:src="@drawable/ic_arrow" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10.0dip" >
+
+                    <TableLayout
+                        android:id="@+id/MorePageTableLayout_Follow6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="1.0dip"
+                        android:shrinkColumns="0"
+                        android:stretchColumns="0" >
+
+                        <TableRow
+                            android:id="@+id/mine_mycomsumption_record_row"
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="2.0dip"
+                            android:layout_marginRight="2.0dip"
+                            android:background="@drawable/more_item_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:paddingBottom="16.0dip"
+                            android:paddingTop="16.0dip" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:drawableLeft="@drawable/my_team"
+                                android:drawablePadding="10.0dip"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="17.0dip"
+                                android:text="消费记录"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical"
+                                android:paddingRight="20.0dip"
+                                android:src="@drawable/ic_arrow" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10.0dip" >
+
+                    <TableLayout
+                        android:id="@+id/MorePageTableLayout_Follow3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="1.0dip"
+                        android:shrinkColumns="0"
+                        android:stretchColumns="0" >
+
+                        <TableRow
+                            android:id="@+id/mine_mycar_row"
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="2.0dip"
+                            android:layout_marginRight="2.0dip"
+                            android:background="@drawable/more_item_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:paddingBottom="16.0dip"
+                            android:paddingTop="16.0dip" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:drawableLeft="@drawable/set_pushmode_sms"
+                                android:drawablePadding="10.0dip"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="17.0dip"
+                                android:text="购物车"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical"
+                                android:paddingRight="20.0dip"
+                                android:src="@drawable/ic_arrow" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10.0dip"
+                    >
+
+                    <TableLayout
+                        android:id="@+id/minepage_saft_logout_table"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="1.0dip"
+                        android:shrinkColumns="0"
+                        android:stretchColumns="0"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btnuserlogout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_red_selector"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_16"
+                            
+                            android:textStyle="bold" />
+                        
+                       
+                        <!-- </TableRow> -->
+                    </TableLayout>
+                     <TextView  android:id="@+id/txt_btn_userlogout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:paddingTop="18.0dip"
+                            android:paddingLeft="150.0dip"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:text="退出登录 "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_16"
+                            android:textStyle="bold"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

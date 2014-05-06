@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_relativelayout_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/widget_bar_bg_n" >
+      <ImageView
+        android:id="@+id/notification_message"
+        style="@style/button_click_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:src="@drawable/dynamic_left_icon" />
+
+    <TextView
+        android:id="@+id/main_head_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:text="我的"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18" />
+
+    <ImageView
+        android:id="@+id/mine_send_dynamic"
+        style="@style/button_click_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dip"
+        android:src="@drawable/tweet_icon_write" />
+
+    
+
+</RelativeLayout>

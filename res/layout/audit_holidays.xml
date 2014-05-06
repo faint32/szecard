@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffefebe7" >
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/widget_bar_bg_n" />
+
+        <!--
+             <ImageView
+            android:id="@+id/btn_leave_back"
+            style="@style/button_click_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:clickable="true"
+            android:src="@drawable/head_back" />
+        -->
+
+        <Button
+            android:id="@+id/btn_leave_back"
+            style="@style/header_button_back"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="请假审核"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_relative"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="116dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="60.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableLayout
+                    android:id="@+id/ask_for_leaveTableLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+
+                    <TableRow
+                        android:id="@+id/ask_for_display_leaveman_row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:paddingBottom="8.0dip" >
+
+                        <TextView
+                            android:id="@+id/txtdisplayleavename"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:hint="请假人:"
+                            android:includeFontPadding="false"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingLeft="17.0dip"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_16" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/apply_holiday_leaveman_row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:background="@drawable/more_item_bg"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="8.0dip" >
+
+                        <TextView
+                            android:id="@+id/txt_apply_holiday_leaveman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text=" 王小二"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/apply_holiday_person_class_display_row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:paddingBottom="8.0dip" >
+
+                        <TextView
+                            android:id="@+id/apply_holiday_person_class_display"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:hint="所在班级:"
+                            android:includeFontPadding="false"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingLeft="17.0dip"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_16" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/apply_holiday_person_class_row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:background="@drawable/more_item_bg"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="8.0dip" >
+
+                        <TextView
+                            android:id="@+id/txtapply_holiday_person_class"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text="所在班级"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+                    </TableRow>
+
+                    <LinearLayout
+                        android:id="@+id/apply_holidays_data_loading_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/loading_audit_data_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sso_load_icon" />
+                    </LinearLayout>
+
+                    <TableRow
+                        android:id="@+id/apply_holiday_type_display_row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:paddingBottom="8.0dip" >
+
+                        <TextView
+                            android:id="@+id/txt_apply_holiday_type_display"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:hint="请假类型："
+                            android:includeFontPadding="false"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingLeft="17.0dip"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_16" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/apply_holiday_type_row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:background="@drawable/more_item_bg"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="15.0dip" >
+
+                        <TextView
+                            android:id="@+id/txt_apply_holiday_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:hint="请假类型"
+                            android:includeFontPadding="false"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingLeft="17.0dip"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_16" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/apply_holiday_startdate_display_row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:paddingBottom="8.0dip" >
+
+                        <TextView
+                            android:id="@+id/apply_holiday_startdate_display"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:hint="开始日期:"
+                            android:includeFontPadding="false"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingLeft="17.0dip"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_16" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/apply_holiday_startdate_row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:layout_marginTop="8.0dip"
+                        android:background="@drawable/more_item_bg"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="16.0dip" >
+
+                        <TextView
+                            android:id="@+id/txt_apply_holiday_startdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:hint="开始日期"
+                            android:includeFontPadding="false"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingLeft="17.0dip"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_16" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/apply_holiday_enddate_display_row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:paddingBottom="8.0dip" >
+
+                        <TextView
+                            android:id="@+id/apply_holiday_enddate_display"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:hint="结束日期:"
+                            android:includeFontPadding="false"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingLeft="17.0dip"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_16" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/apply_holiday_start_date_row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:layout_marginTop="8.0dip"
+                        android:background="@drawable/more_item_bg"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="16.0dip" >
+
+                        <TextView
+                            android:id="@+id/txt_apply_hoilday_enddate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:hint="结束日期"
+                            android:includeFontPadding="false"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingLeft="17.0dip"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_16" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/apply_holiday_days_display_row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:paddingBottom="8.0dip" >
+
+                        <TextView
+                            android:id="@+id/apply_holiday_days_display"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:hint="請假天數:"
+                            android:includeFontPadding="false"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingLeft="17.0dip"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_16" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/apply_holiday_days_row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:layout_marginTop="8.0dip"
+                        android:background="@drawable/more_item_bg"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="16.0dip" >
+
+                        <TextView
+                            android:id="@+id/txt_apply_holiday_days"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:hint="請假天數:"
+                            android:includeFontPadding="false"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingLeft="17.0dip"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_16" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/apply_holiday_remark_display_row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:paddingBottom="8.0dip" >
+
+                        <TextView
+                            android:id="@+id/apply_holiday_remark_display"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:hint="請假理由:"
+                            android:includeFontPadding="false"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingLeft="17.0dip"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_16" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/apply_holiday_remark_row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:layout_marginTop="8.0dip"
+                        android:background="@drawable/more_item_bg"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="16.0dip" >
+
+                        <TextView
+                            android:id="@+id/txt_apply_holiday_remark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:hint="請假理由:"
+                            android:includeFontPadding="false"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingLeft="17.0dip"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_16" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/apply_holiday_audit_opinion_display_row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:paddingBottom="8.0dip" >
+
+                        <TextView
+                            android:id="@+id/apply_holiday_audit_opinion_display"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:hint="审核意见:"
+                            android:includeFontPadding="false"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingLeft="17.0dip"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_16" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/apply_holiday_audit_opinion_row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:layout_marginTop="8.0dip"
+                        android:background="@drawable/more_item_bg"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="16.0dip" >
+
+                        <AutoCompleteTextView
+                            android:id="@+id/actaudit_opinion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:hint="请输入审核意见"
+                            android:includeFontPadding="false"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingLeft="17.0dip"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_16" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/apply_holiday_audit_status_display_row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:paddingBottom="8.0dip" >
+
+                        <TextView
+                            android:id="@+id/apply_holiday_audit_status_display"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:hint="审核状态:"
+                            android:includeFontPadding="false"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingLeft="17.0dip"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_16" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/apply_holiday_audit_status_row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:layout_marginTop="8.0dip"
+                        android:background="@drawable/more_item_bg"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="16.0dip" >
+
+                        <LinearLayout
+                            android:id="@+id/reviewing_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal" >
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <RadioButton
+                                    android:id="@+id/rdoholiday_yes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15.0dip"
+                                    android:layout_marginTop="10.0dip"
+                                    android:button="@drawable/apply_holiday_radion_buton_selector"
+                                    android:textSize="@dimen/text_size_14"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_team_detail_remark"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="50.0dip"
+                                    android:layout_marginTop="10.0dip"
+                                    android:text="通过"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_16"
+                                    android:textStyle="bold" />
+
+                                <RadioButton
+                                    android:id="@+id/rdoholiday_no"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5.0dip"
+                                    android:layout_marginTop="10.0dip"
+                                    android:button="@drawable/apply_holiday_radion_buton_selector"
+                                    android:textSize="@dimen/text_size_14"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_team_detail_remark"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5.0dip"
+                                    android:layout_marginTop="10.0dip"
+                                    android:text="不通过"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_16"
+                                    android:textStyle="bold" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/ask_for_leaveentry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="16.0dip" >
+
+                        <Button
+                            android:id="@+id/btnauditholiday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_selector"
+                            android:gravity="center_vertical"
+                            android:text="                            确   定"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_16"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

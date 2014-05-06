@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/img_notification_bg" >
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+      <!--   <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/widget_bar_bg_n" />
+ -->
+        <ImageView
+            android:id="@+id/progressImage"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/android_title_bg_progress"
+            android:visibility="gone" />
+
+      <!--   <TextView
+            android:id="@+id/titleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="通知消息"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18" /> -->
+    </RelativeLayout>
+
+<!--     <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_relative"
+        android:fadingEdge="none" > -->
+      
+<!--     </ScrollView> -->
+
+       <TextView
+           android:id="@+id/txtnotication"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/top_relative"
+           android:layout_marginTop="51dp"
+           android:paddingLeft="38dp"
+           android:paddingRight="20dp"
+           android:lineSpacingExtra="4dp"
+           android:text="   我们都知道JAVA中的Serialize机制，译成串行化、序列化……，其作用是能将数据对象存入字节流当中，在需要时重新生成对象。主要应用是利用外部存储"
+           android:textColor="@color/black"
+           android:textSize="@dimen/text_size_17" />
+
+</RelativeLayout>

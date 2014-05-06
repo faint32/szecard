@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_relativelayout_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/widget_bar_bg_n" >
+
+    <!--
+        <ImageView
+        android:id="@+id/homework_head_back"
+        style="@style/button_click_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:src="@drawable/head_back" />
+    -->
+
+    <Button
+        android:id="@+id/homework_head_back"
+        style="@style/header_button_back"
+        android:layout_gravity="left|center"
+          android:layout_centerVertical="true"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/main_head_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:text="家庭作业"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18" />
+
+    <ImageView
+        android:id="@+id/btn_upload_homework"
+        style="@style/button_click_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dip"
+        android:src="@drawable/add_home_work"
+        android:visibility="gone" />
+
+</RelativeLayout>

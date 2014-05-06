@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main_relativelayout_header" 
+  	android:layout_width="fill_parent" 
+  	android:layout_height="wrap_content"
+  	android:background="@drawable/widget_bar_bg_n">
+  	
+  <!--   <ImageView
+    	android:id="@+id/main_head_logo"
+  		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="1.0dip" 
+		android:src="@drawable/logo_3"/>
+     -->
+    <TextView 
+        android:id="@+id/main_head_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:textColor="@color/white"
+		android:textSize="@dimen/text_size_18"
+		android:gravity="center_horizontal"
+		android:text="我的账单"/>
+    
+    
+	
+   	
+   	<!-- <ImageView
+    	android:id="@+id/main_head_gps"
+  		android:layout_width="wrap_content"
+		android:layout_height="40.0dip"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="70.0dip"
+		style="@style/button_click_bg"
+		android:src="@drawable/header_location_icon"/>
+    
+    <ImageView
+    	android:id="@+id/main_head_search"
+  		android:layout_width="wrap_content"
+		android:layout_height="40.0dip"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="10.0dip"
+		style="@style/button_click_bg"
+		android:src="@drawable/header_search_icon"/>
+   	
+   
+		
+    <ImageButton
+    	android:id="@+id/main_head_pub_tweet"
+	  	android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="2.0dip"
+		android:background="@drawable/szzyz_bg"
+		android:visibility="gone"/> 
+	 -->
+</RelativeLayout>
+

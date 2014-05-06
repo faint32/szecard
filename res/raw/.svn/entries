@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="https://172.16.17.250:8443/svn/ekt"
+   name=""
+   revision="6645"
+   last-author="wutao"
+   url="https://172.16.17.250:8443/svn/ekt/szvcpmobile/res/raw"
+   uuid="16c010ab-a41a-fd4e-9db9-00ba17f644ec"
+   committed-rev="6645"
+   kind="dir"
+   committed-date="2013-08-15T08:12:08.628121Z"/>
+<entry
+   name="newdatatoast.wav"
+   checksum="980d3d81a9f33281e52fbcdccb53aeb2"
+   last-author="wutao"
+   committed-rev="6645"
+   text-time="2013-08-15T08:12:08.628000Z"
+   kind="file"
+   committed-date="2013-08-15T08:12:08.628121Z"
+   prop-time="2013-08-15T08:16:31.118000Z"/>
+<entry
+   name="notificationsound.wav"
+   checksum="02e6987b998d258259e0b059d3fe41f3"
+   last-author="wutao"
+   committed-rev="6645"
+   text-time="2013-08-15T08:12:08.628000Z"
+   kind="file"
+   committed-date="2013-08-15T08:12:08.628121Z"
+   prop-time="2013-08-15T08:16:31.137000Z"/>
+</wc-entries>

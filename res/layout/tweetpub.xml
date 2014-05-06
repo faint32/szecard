@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tweet_pub_header" />
+
+    <LinearLayout
+        android:id="@+id/tweet_pub_message"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/tweet_pub_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/review_bg_blue"
+            android:padding="5.0dip" >
+
+            <ProgressBar style="@style/loading_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:text="动态发表中···"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/tweet_pub_form"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <EditText
+            android:id="@+id/tweet_pub_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:autoLink="web"
+            android:background="@null"
+            android:gravity="top"
+            android:hint=" 分享生活中每一份感动…" />
+
+        <include layout="@layout/tweet_menu" />
+
+        <ImageView
+            android:id="@+id/tweet_pub_image"
+            android:layout_width="60.0dip"
+            android:layout_height="45.0dip"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="5.0dip"
+            android:clickable="true"
+            android:visibility="gone" />
+
+        <!--
+        <LinearLayout
+            android:id="@+id/tweet_pub_clearwords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:background="@drawable/clearwords_bg"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tweet_pub_numberwords"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="160"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:src="@drawable/clearwords_bg" />
+        </LinearLayout>
+        -->
+    </FrameLayout>
+
+    <include layout="@layout/tweet_pub_footer" />
+
+</LinearLayout>

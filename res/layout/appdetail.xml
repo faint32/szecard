@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffefebe7" >
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/widget_bar_bg_n" />
+
+        <ImageView
+            android:id="@+id/progressImage"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/android_title_bg_progress"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_app_detial_header_tile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="成长记录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_relative"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="116dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="60.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableLayout
+                    android:id="@+id/MorePageTableLayout_Favorite"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+
+                    <TableRow
+                        android:id="@+id/more_page_row0"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="8.0dip" >
+
+                        <ImageView
+                            android:id="@+id/app_detail_icon"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:src="@drawable/icon_curriculum" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingRight="145.0dip" >
+
+                            <TextView
+                                android:id="@+id/txt_app_detail_name"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="10.0dip"
+                                android:includeFontPadding="false"
+                                android:text="成长记录"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <TextView
+                                android:id="@+id/txt_app_detail_version"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="10.0dip"
+                                android:includeFontPadding="false"
+                                android:text="版本:1.0"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <TextView
+                                android:id="@+id/txt_app_detail_size"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="10.0dip"
+                                android:includeFontPadding="false"
+                                android:text="大小:58kb"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/MorePageTableLayout_Favorite1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="0"
+                android:stretchColumns="0" >
+
+                <TableRow
+                    android:id="@+id/more_page_row2"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/commodity_detail_bg"
+                    android:paddingBottom="16.0dip"
+                    android:paddingTop="16.0dip" >
+
+                    <TextView
+                        android:id="@+id/txt_app_detail_desc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20.0dip"
+                        android:text="这是一个好app"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/more_page_row3"
+                    android:layout_width="fill_parent"
+                    android:paddingBottom="16.0dip"
+                    android:paddingTop="16.0dip" >
+
+                    <Button
+                        android:id="@+id/btn_add_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_selector"
+                        android:text="添加到我的应用"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
